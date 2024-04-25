@@ -1,0 +1,17 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'NeosRulez.Shop.Payment.Six': true
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.Shop.Payment.Six: true
+
+NeosRulez:
+  Shop:
+    Payment:
+      payments:
+        six:
+          nodeType: 'NeosRulez.Shop.Payment.Six:Payment.Six'
+          class: 'NeosRulez\Shop\Payment\Six\Payment\Six'

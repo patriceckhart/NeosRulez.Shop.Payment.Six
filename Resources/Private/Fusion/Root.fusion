@@ -1,0 +1,3 @@
+prototype(NeosRulez.Shop.Payment.Six:Payment.Six) < prototype(NeosRulez.Shop.Payment:Payment.Generic) {
+    @context.icon = ${''}
+}

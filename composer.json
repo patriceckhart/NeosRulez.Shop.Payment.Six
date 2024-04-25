@@ -1,0 +1,18 @@
+{
+    "description": "Six payment provider for the neosrulez-shop package",
+    "type": "neos-package",
+    "name": "neosrulez/shop-payment-six",
+    "require": {
+        "neosrulez/shop-payment": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NeosRulez\\Shop\\Payment\\Six\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "NeosRulez.Shop.Payment.Six"
+        }
+    }
+}

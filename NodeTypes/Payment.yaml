@@ -1,0 +1,77 @@
+'NeosRulez.Shop.Payment.Six:Payment.Six':
+  superTypes:
+    'NeosRulez.Shop.Payment:Payment.Generic': true
+  ui:
+    label: Six
+    icon: fas fa-credit-card
+    group: payment
+    inspector:
+      groups:
+        document:
+          label: Six
+          icon: fas fa-credit-card
+  properties:
+    successPage:
+      type: reference
+      ui:
+        label: Success page
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after faicon
+    failurePage:
+      type: reference
+      ui:
+        label: Failure page
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after successPage
+    cancelPage:
+      type: reference
+      ui:
+        label: Cancel page
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after failurePage
+    username:
+      type: string
+      ui:
+        label: Username
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after cancelPage
+    password:
+      type: string
+      ui:
+        label: Password
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after username
+    url:
+      type: string
+      ui:
+        label: Url
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after password
+    customerId:
+      type: string
+      ui:
+        label: Customer ID
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after url
+    terminalId:
+      type: string
+      ui:
+        label: Terminal ID
+        reloadIfChanged: true
+        inspector:
+          group: document
+          position: after customerId
