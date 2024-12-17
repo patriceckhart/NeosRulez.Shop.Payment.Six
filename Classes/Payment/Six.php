@@ -38,7 +38,7 @@ class Six extends AbstractPayment
      */
     private function createPayment(array $payment, Order $order, string $successUri, string $failureUri): string
     {
-        $uniqueId = Algorithms::generateRandomToken(24);
+        $uniqueId = Algorithms::generateRandomToken(6);
         $username = $payment['username'];
         $password = $payment['password'];
         $url = $payment['url'];
